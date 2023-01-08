@@ -69,9 +69,11 @@ p {
   .peru {
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
+    height: 300px;
   }
   .pinoy {
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
+    height: 300px;
   }
 }
