@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: hsl(60, 36%, 83%); */
+}
+div {
+  display: flex;
+  flex: 1 1 0;
+}
+.title {
+  background-color: darkolivegreen;
+  border: 5px solid saddlebrown;
+  padding: 20px;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10%;
+  /* border: 5px solid saddlebrown; */
+}
+.peru {
+  background-color: hsl(57, 54%, 66%);
+  padding: 40px 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pinoy {
+  background-color: hsl(236, 64%, 67%);
+  padding: 40px 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  max-height: 45px;
+  max-width: 30px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 10px;
+}
+p {
+  margin: 10px;
+  text-align: center;
+}
+.peru button,
+.pinoy button {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
+  .peru {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
+  .pinoy {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+}
